@@ -1,0 +1,8 @@
+{
+  // ${workspaceFolder}代表当前项目根目录；这里指定项目自己的虚拟环境解释器。
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  // 打开VS Code集成终端时自动激活.venv，避免误用系统Python。
+  "python.terminal.activateEnvironment": true,
+  // 开启基础类型检查，在编辑阶段提示常见类型错误，但不过度严格。
+  "python.analysis.typeCheckingMode": "basic"
+}

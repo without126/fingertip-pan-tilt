@@ -1,0 +1,65 @@
+{
+  // VS Code调试配置文件格式版本；通常保持0.2.0即可。
+  "version": "0.2.0",
+  // configurations数组中的每个对象都会成为F5菜单中的一个启动选项。
+  "configurations": [
+    {
+      // F5菜单里显示的名称。
+      "name": "Step 1: Camera and FPS",
+      // debugpy是微软Python扩展使用的调试器类型。
+      "type": "debugpy",
+      // launch表示启动一个新Python进程，而不是附加到已有进程。
+      "request": "launch",
+      // 要执行的Python文件；${workspaceFolder}代表项目根目录。
+      "program": "${workspaceFolder}\\src\\step1_camera.py",
+      // 在VS Code集成终端中显示输出和错误信息。
+      "console": "integratedTerminal",
+      // 把程序工作目录设为项目根目录，保证相对路径含义稳定。
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      // 第二步：手部21关键点检测。
+      "name": "Step 2: Hand Landmarks",
+      // 使用Python调试器。
+      "type": "debugpy",
+      // 启动新进程。
+      "request": "launch",
+      // 第二步程序路径。
+      "program": "${workspaceFolder}\\src\\step2_hand_landmarks.py",
+      // 使用集成终端。
+      "console": "integratedTerminal",
+      // 工作目录仍为项目根目录。
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      // 第三步：食指轨迹追踪。
+      "name": "Step 3: Fingertip Trail",
+      // 使用Python调试器。
+      "type": "debugpy",
+      // 启动新进程。
+      "request": "launch",
+      // 第三步程序路径。
+      "program": "${workspaceFolder}\\src\\step3_fingertip_trail.py",
+      // 使用集成终端。
+      "console": "integratedTerminal",
+      // 工作目录仍为项目根目录。
+      "cwd": "${workspaceFolder}"
+    },
+    {
+      // 第四步：食指控制ESP32二自由度云台。
+      "name": "Step 4: Fingertip Pan-Tilt",
+      // 使用微软Python扩展提供的debugpy调试器。
+      "type": "debugpy",
+      // 启动一个新的Python进程。
+      "request": "launch",
+      // 第四步视觉与串口控制程序路径。
+      "program": "${workspaceFolder}\\src\\step4_fingertip_pan_tilt.py",
+      // auto会自动选择最可能的ESP32 COM端口；失败时可改成COM7等明确值。
+      "args": ["--port", "auto", "--hand", "Right"],
+      // 在集成终端显示串口选择、错误和退出信息。
+      "console": "integratedTerminal",
+      // 工作目录设置为项目根目录，保证模型相对位置稳定。
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

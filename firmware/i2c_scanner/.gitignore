@@ -1,0 +1,10 @@
+# PlatformIO编译产生的目标文件和最终固件，可随时重新生成。
+.pio
+# VS Code C/C++扩展自动创建的符号浏览数据库。
+.vscode/.browse.c_cpp.db*
+# PlatformIO自动生成的C/C++头文件搜索路径配置。
+.vscode/c_cpp_properties.json
+# PlatformIO自动生成的调试启动配置。
+.vscode/launch.json
+# VS Code IntelliSense预编译头缓存目录。
+.vscode/ipch

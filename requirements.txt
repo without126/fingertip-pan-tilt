@@ -1,0 +1,8 @@
+# MediaPipe提供手部检测模型的Python运行接口。
+mediapipe==0.10.35
+# NumPy提供图像底层使用的多维数组和数值计算能力。
+numpy==2.5.2
+# OpenCV贡献版负责摄像头读取、颜色转换、绘图和窗口显示。
+opencv-contrib-python==5.0.0.93
+# pyserial负责电脑与ESP32之间的USB串口通信。
+pyserial==3.5

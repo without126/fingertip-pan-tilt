@@ -1,0 +1,7 @@
+{
+  // recommendations列出打开本项目时VS Code建议安装的扩展。
+  "recommendations": [
+    // 微软官方Python扩展提供运行、调试、补全和解释器选择功能。
+    "ms-python.python"
+  ]
+}
